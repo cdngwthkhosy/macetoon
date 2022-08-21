@@ -4,10 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title inertia>{{ config('app.name', 'Laravel') }}</title>
+        <title inertia>{{ config('app.name', 'Macetoon') }}</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+        </style>
 
         <!-- Scripts -->
         @routes
@@ -15,7 +17,7 @@
         @vite('resources/js/app.jsx')
         @inertiaHead
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-poppins">
         @inertia
     </body>
 </html>
