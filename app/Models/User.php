@@ -57,7 +57,7 @@ class User extends Authenticatable
         $dateNow = Carbon::now();
         $dateExpired = Carbon::create($this->lastActiveUserSubscription->expired_date);
 
-        return $dateNow->lessThanOrEqual($dateExpired);
+        return $dateNow->lessThanOrEqualTo($dateExpired);
     }
 
     /**
@@ -67,6 +67,6 @@ class User extends Authenticatable
      */
     public function lastActiveUserSubscription(): HasOne
     {
-        return $this->hasOne(UserSubscription::class)->wherePaymentStatus('paid')->latest();
+        return $this->hasOne(UserSubscription::class)->wherePaymentStatus('paid')->where('expired_date', '>=', Carbon::now())->latest();
     }
 }
