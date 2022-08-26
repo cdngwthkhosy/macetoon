@@ -1,4 +1,4 @@
-import Authenticated from "@/Layouts/Authenicated/Index";
+import Authenticated from "@/Layouts/Authenticated/Index";
 import { Link, Head } from "@inertiajs/inertia-react";
 import Flickity from "react-flickity-component";
 import FeaturedMovie from "@/Components/FeaturedMovie";
