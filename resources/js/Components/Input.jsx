@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import propTypes from "prop-types";
-// import './../../css/input.css';
+import './../../css/input.css';
 
 Input.propTypes = {
-    type: propTypes.oneOf(["text", "email", "password", "number", "file"]),
+    type: propTypes.oneOf(["text", "email", "password", "number", "file", "url"]),
     name: propTypes.string,
     value: propTypes.oneOfType([propTypes.string, propTypes.number]),
     className: propTypes.string,
