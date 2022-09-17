@@ -66,6 +66,7 @@ export default function Login() {
                                         placeholder="Email Address"
                                         value={data.email}
                                         handleChange={onHandleChange}
+                                        isFocused
                                     />
                                     <InputError message={errors.email} />
                                 </div>
