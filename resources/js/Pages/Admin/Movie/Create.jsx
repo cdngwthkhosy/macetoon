@@ -91,7 +91,7 @@ export default function Create({ auth }) {
 
                 <Label forInput="rating" value="Rating" className="mt-4" />
                 <Input
-                    type="number"
+                    type="text"
                     name="rating"
                     variant="primary-outline"
                     handleChange={onHandleChange}

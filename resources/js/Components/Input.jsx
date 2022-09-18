@@ -15,6 +15,7 @@ Input.propTypes = {
     variant: propTypes.oneOf(["primary", "error", "primary-outline"]),
     placeholder: propTypes.string,
     isError: propTypes.bool,
+    step: propTypes.any,
 };
 
 export default function Input({
@@ -30,6 +31,7 @@ export default function Input({
     variant = "primary",
     placeholder,
     isError,
+    step,
 }) {
     const input = useRef();
 
@@ -45,6 +47,7 @@ export default function Input({
                 type={type}
                 name={name}
                 value={value}
+                step={step}
                 defaultValue={defaultValue}
                 className={`rounded-2xl bg-form-bg py-[13px] px-7 w-full ${
                     isError && "input-error"

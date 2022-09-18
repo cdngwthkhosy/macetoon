@@ -99,6 +99,7 @@ export default function Edit({ auth, movie }) {
                 <Input
                     type="number"
                     name="rating"
+                    step="0.1"
                     defaultValue={movie.rating}
                     variant="primary-outline"
                     handleChange={onHandleChange}

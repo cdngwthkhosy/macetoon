@@ -29,7 +29,7 @@ class Update extends FormRequest
             'category' => 'nullable',
             'video_url' => 'nullable|url',
             'thumbnail' => 'nullable|image',
-            'rating' => 'nullable|numeric|min:0|max:5',
+            'rating' => 'nullable|numeric|between:0,5',
             'is_featured' => 'nullable|boolean'
         ];
     }

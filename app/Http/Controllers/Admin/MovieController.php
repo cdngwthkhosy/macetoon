@@ -42,7 +42,7 @@ class MovieController extends Controller
      */
     public function store(Store $request)
     {
-        $data = $request->validated();
+        $data = $request->validate();
         $data['thumbnail'] = Storage::disk('public')->put('movies', $request->file('thumbnail'));
         $data['slug'] = Str::slug($data['name']);
         $movie = Movie::create($data);
