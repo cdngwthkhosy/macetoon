@@ -98,7 +98,7 @@ const UserOthers = [
                 />
             </svg>
         ),
-        text: "Subsciption Plan",
+        text: "Subscription Plan",
     },
     {
         link: null,
